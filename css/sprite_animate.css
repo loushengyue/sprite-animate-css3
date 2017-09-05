@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  padding: 50px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.car-list {
+  overflow: hidden;
+  height: 80px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.car-list li {
+  float: left;
+  height: 80px;
+  width: 170px;
+  margin-right: 5px;
+  background-image: url("../img/cargroup.png");
+  background-color: #888;
+}
+.car-list li:nth-of-type(1) {
+  background-position: 230px 0;
+}
+.car-list li:nth-of-type(2) {
+  background-position: -618px 0;
+}
+.car-list li:nth-of-type(3) {
+  background-position: 765px 0;
+}
+.car-list li:nth-of-type(4) {
+  background-position: -965px 0;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  background: url("../img/background.png") no-repeat;
+  position: relative;
+}
+.box > div {
+  height: 80px;
+  width: 600px;
+  position: absolute;
+  left: 0;
+}
+.red {
+  background-image: url("../img/red.png");
+  background-position: -3000px 0;
+  top: 62px;
+  animation: rightCar 8s linear infinite;
+}
+.yellow {
+  background-image: url("../img/cargroup.png");
+  background-position: -3000px 0;
+  top: 145px;
+  animation: rightCar 5s linear infinite;
+}
+.blue {
+  background-image: url("../img/blue.png");
+  background-position: 0 0;
+  bottom: 72px;
+  animation: leftCar 5s linear infinite;
+}
+.green {
+  background-image: url("../img/green.png");
+  background-position: 0 0;
+  bottom: -6px;
+  animation: leftCar 8s linear infinite;
+}
+@keyframes rightCar {
+  0% {
+    background-position: -3000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-moz-keyframes rightCar {
+  0% {
+    background-position: -3000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes rightCar {
+  0% {
+    background-position: -3000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-o-keyframes rightCar {
+  0% {
+    background-position: -3000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes leftCar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3000px 0;
+  }
+}
+@-moz-keyframes leftCar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3000px 0;
+  }
+}
+@-webkit-keyframes leftCar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3000px 0;
+  }
+}
+@-o-keyframes leftCar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3000px 0;
+  }
+}
